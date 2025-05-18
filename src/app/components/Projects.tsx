@@ -6,69 +6,69 @@ import Image from 'next/image';
 export default function Projects() {
   const myProjects = [
     {
-      title: 'Proyek Saya 1',
-      description: 'Deskripsi singkat proyek saya 1.',
+      title: '1',
+      description: 'Fitur Login dan Register',
       imageUrl: '/images/5.jpg',
     },
     {
-      title: 'Proyek Saya 2',
-      description: 'Deskripsi singkat proyek saya 2.',
+      title: '2',
+      description: 'Management Menu Cafe',
       imageUrl: '/images/6.jpg',
     },
     {
-      title: 'Proyek Saya 3',
-      description: 'Deskripsi singkat proyek saya 3.',
+      title: '3',
+      description: 'Menu Cafe',
       imageUrl: '/images/7.jpg',
     },
     {
-      title: 'Proyek Saya 4',
-      description: 'Deskripsi singkat proyek saya 4.',
+      title: '4',
+      description: 'Order Menu',
       imageUrl: '/images/8.jpg',
     },
   ];
 
   const otherProjects = [
     {
-      title: 'Proyek 1',
-      description: 'Deskripsi singkat proyek 1.',
+      title: '1',
+      description: 'Fitur Cuaca dan Tanggal',
       imageUrl: '/images/1.jpg',
     },
     {
-      title: 'Proyek 2',
-      description: 'Deskripsi singkat proyek 2.',
+      title: '2',
+      description: 'Fitur Option Website',
       imageUrl: '/images/2.jpg',
     },
     {
-      title: 'Proyek 3',
-      description: 'Deskripsi singkat proyek 3.',
+      title: '3',
+      description: 'Home Page utama Website',
       imageUrl: '/images/3.jpg',
     },
     {
-      title: 'Proyek 4',
-      description: 'Deskripsi singkat proyek 4.',
+      title: '4',
+      description: 'Fitur Contact Us dan Navigation Bar',
       imageUrl: '/images/4.jpg',
     },
   ];
 
   const newProjects = [
     {
-      title: 'Proyek Baru 1',
-      description: 'Deskripsi proyek baru yang lebih keren.',
+      title: '1',
+      description: 'Login Pilihan Stok atau CS',
       imageUrl: '/images/9.jpg',
     },
     {
-      title: 'Proyek Baru 2',
-      description: 'Deskripsi proyek baru yang lebih keren.',
+      title: '2',
+      description: 'Form Pemesanan',
       imageUrl: '/images/10.jpg',
     },
     {
-      title: 'Proyek Baru 3',
-      description: 'Deskripsi proyek baru yang lebih keren.',
+      title: '3',
+      description: 'Update Stok',
       imageUrl: '/images/11.jpg',
     },
     {
-      title: 'Proyek Baru 4',
-      description: 'Deskripsi proyek baru yang lebih keren.',
+      title: '4',
+      description: 'Hasil Form Pemesanan',
       imageUrl: '/images/12.jpg',
     },
   ];

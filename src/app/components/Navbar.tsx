@@ -1,5 +1,4 @@
 'use client';
-
 import Link from 'next/link';
 import { useState, useEffect } from 'react';
 import styles from './Navbar.module.css';
@@ -41,9 +40,7 @@ export default function Navbar() {
   };
 
   return (
-    <header
-      className={`${styles.header} ${!showNavbar ? styles.hide : ''}`}
-    >
+    <header className={`${styles.header} ${!showNavbar ? styles.hide : ''}`}>
       <nav className={styles.nav}>
         <h1
           style={{
@@ -58,19 +55,13 @@ export default function Navbar() {
           Muhammad Alrio Bagaskara
         </h1>
 
-        <button
-          onClick={toggleMenu}
-          aria-label="Toggle menu"
-          className={styles.hamburger}
-        >
+        <button onClick={toggleMenu} aria-label="Toggle menu" className={styles.hamburger}>
           <span />
           <span />
           <span />
         </button>
 
-        <ul
-          className={`${styles.navLinks} ${menuOpen ? styles.open : ''}`}
-        >
+        <ul className={`${styles.navLinks} ${menuOpen ? styles.open : ''}`}>
           {['Home', 'About', 'Projects', 'Contact'].map((item) => (
             <li key={item}>
               <Link

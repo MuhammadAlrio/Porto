@@ -1,12 +1,19 @@
 import React from 'react';
 import styles from './Hero.module.css';
+import Image from 'next/image';
 
 const Hero: React.FC = () => {
   return (
     <section className={styles.heroSection}>
       <div className={styles.bgDecoration}></div>
       <div className={styles.left}>
-        <img src="images/foto.jpg" alt="Foto Profil" loading="lazy" />
+      <Image
+        src="/images/foto.jpg"
+        alt="Foto Profil"
+        width={300}    // sesuaikan ukuran
+        height={300}   // sesuaikan ukuran
+        priority={true} // jika ingin preloading supaya langsung tampil cepat
+      />
       </div>
 
       <div className={styles.center}>
