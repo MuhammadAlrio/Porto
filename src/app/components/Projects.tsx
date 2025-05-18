@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useState } from 'react';
+import Image from 'next/image';
 
 export default function Projects() {
   const myProjects = [
@@ -110,12 +111,12 @@ export default function Projects() {
               marginBottom: '12px',
             }}
           >
-            <img
+            <Image
               src={project.imageUrl}
               alt={project.title}
+              width={500}        // contoh ukuran, sesuaikan
+              height={300}       // contoh ukuran, sesuaikan
               style={{
-                width: '100%',
-                height: '100%',
                 objectFit: 'cover',
                 transition: 'transform 0.3s ease',
               }}
@@ -158,7 +159,7 @@ export default function Projects() {
         }}
       >
         <h1 style={{ fontSize: '2.5rem', color: '#5b4a3e', marginBottom: '20px' }}>
-          My Project's
+          My Projects
         </h1>
       </section>
 
@@ -213,12 +214,12 @@ export default function Projects() {
             cursor: 'pointer',
           }}
         >
-          <img
+          <Image
             src={selectedImage}
             alt="Preview"
+            width={500}        // sesuaikan ukuran
+            height={300}       // sesuaikan ukuran
             style={{
-              maxWidth: '90%',
-              maxHeight: '90%',
               borderRadius: '12px',
               boxShadow: '0 4px 20px rgba(0,0,0,0.5)',
               cursor: 'default',
