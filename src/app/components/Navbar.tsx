@@ -73,7 +73,7 @@ export default function Navbar() {
         >
           {['Home', 'About', 'Projects', 'Contact'].map((item) => (
             <li key={item}>
-              <a
+              <Link
                 href={`#${item.toLowerCase()}`}
                 onClick={handleLinkClick}
                 style={{
@@ -86,16 +86,16 @@ export default function Navbar() {
                   display: 'block',
                 }}
                 onMouseEnter={(e) => {
-                  e.currentTarget.style.backgroundColor = '#bfa06b';
-                  e.currentTarget.style.color = 'white';
+                  (e.currentTarget as HTMLElement).style.backgroundColor = '#bfa06b';
+                  (e.currentTarget as HTMLElement).style.color = 'white';
                 }}
                 onMouseLeave={(e) => {
-                  e.currentTarget.style.backgroundColor = 'transparent';
-                  e.currentTarget.style.color = '#5b4a3e';
+                  (e.currentTarget as HTMLElement).style.backgroundColor = 'transparent';
+                  (e.currentTarget as HTMLElement).style.color = '#5b4a3e';
                 }}
               >
                 {item}
-              </a>
+              </Link>
             </li>
           ))}
         </ul>
